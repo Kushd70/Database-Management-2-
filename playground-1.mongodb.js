@@ -1,0 +1,3 @@
+// Creating a new database or use an existing db...
+use('shop');
+

@@ -51,3 +51,11 @@ db.getCollection('users').insertMany(user_list);
 // Selecting all the data from a collection
 use('shop');
 db.getCollection('users').find();// returns an array of json objects
+
+// Selecting only a specific set of attributes
+// display name and city of all the users
+use('shop');
+db.getCollection('users').find({}, {"name": 1, "city": 1}); // projection using fields
+
+
+// selecting 

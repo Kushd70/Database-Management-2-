@@ -50,4 +50,4 @@ db.getCollection('users').insertMany(user_list);
 
 // Selecting all the data from a collection
 use('shop');
-db.getCollection('users').find();
+db.getCollection('users').find();// returns an array of json objects

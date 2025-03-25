@@ -62,3 +62,8 @@ db.getCollection('users').find({}, {"name": 1, "city": 1}); // projection using 
 // display details of all the user from kandy
 use('shop');
 db.getCollection('users').find({"city": "Kandy"}); // Equality condition
+
+
+
+
+

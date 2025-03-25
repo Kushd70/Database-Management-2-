@@ -56,5 +56,7 @@ db.createCollection('items',
     }
 ); 
 
-
+let item_list = [
+    {"name" : "ABC", "price" : 100.00, "stock" : 30, "supplier": [{}]}
+]
 

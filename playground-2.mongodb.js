@@ -120,3 +120,5 @@ db.getCollection('items').aggregate([
         }
     }
 ]);
+
+// 9. select maximum stock for each category....

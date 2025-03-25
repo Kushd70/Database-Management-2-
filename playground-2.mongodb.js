@@ -110,3 +110,13 @@ db.getCollection('items').aggregate([
     }
 ]);
 
+// 8. select maximum stock from the collection....
+use('supermarket');
+db.getCollection('items').aggregate([
+    {
+        $group:{
+            _id:null,
+            maximumStock: {$max : "$stock"}
+        }
+    }
+]);

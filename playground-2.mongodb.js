@@ -57,6 +57,10 @@ db.createCollection('items',
 ); 
 
 let item_list = [
-    {"name" : "ABC", "price" : 100.00, "stock" : 30, "supplier": [{}]}
+    {"name" : "ABC", "price" : 100.00, "stock" : 30, "supplier": [
+            {"sup_name" : "Abc Company", "contact": "08888888"},
+            {"sup_name": "Werty Suppliers", "contact": "09888888"}
+        ]
+    }
 ]
 

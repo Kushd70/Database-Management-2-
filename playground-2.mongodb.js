@@ -61,6 +61,10 @@ let item_list = [
             {"sup_name" : "Abc Company", "contact": "08888888"},
             {"sup_name": "Werty Suppliers", "contact": "09888888"}
         ]
-    }
-]
+    },
+    {"name": "BCD", "price" : 1200.00, "stock":10, "category": "Electronics"},
+    {"name": "CDE", "price" : 1250.00, "stock":20, "category": "Misc", 
+        "variation" : {"size": "L", "colour" : "black"}
+    }  
+];
 

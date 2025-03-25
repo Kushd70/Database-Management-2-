@@ -67,4 +67,5 @@ let item_list = [
         "variation" : {"size": "L", "colour" : "black"}
     }  
 ];
-
+use('supermarket');
+db.getCollection('items').insertMany(item_list);

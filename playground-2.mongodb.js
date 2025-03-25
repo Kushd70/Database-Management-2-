@@ -97,10 +97,9 @@ db.getCollection('items').find({$or: [{"category" : "Electronics"}, {"stock" : 5
 
 /* Aggregate functions..
 db.<collection>.aggregate([<aggregate functions>]);
-{$group:{_id:<grouping attributes></grouping> }}
+{$group:{_id:<grouping attributes>, <aggregate attribute>: <aggregate operator>}}
 
 */
-
 use('supermarket');
 db.getCollection('items').aggregate([
     {

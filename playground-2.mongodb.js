@@ -86,5 +86,7 @@ db.getCollection('items').find({$and : [{price :{$gt : 1000}, stock : {$gt : 0}}
 
 // 5. Select items with supplier name as "Abc company".......
 use('supermarket');
-db.getCollection('items').find({"suppliers.sup_name" : "Abc Company"});
+db.getCollection('items').find({"suppliers.sup_name" : "Abc Company"}); // since supplier is a main attribute we need to add " " there 
+
+// 6.
 

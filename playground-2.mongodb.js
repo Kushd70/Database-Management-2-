@@ -122,3 +122,12 @@ db.getCollection('items').aggregate([
 ]);
 
 // 9. select maximum stock for each category....
+use('supermarket');
+db.getCollection('items').aggregate([
+    {
+        $group:{
+            _id:"category",
+            maxStockCategory: {$max : "$stock"}
+        }
+    }
+]);

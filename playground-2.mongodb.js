@@ -76,4 +76,6 @@ db.getCollection('items').find();
 
 // 3. select item name and price of items with their stocks reached to 0
 use('supermarket');
-db.getCollection('items').find()
+db.getCollection('items').find({"stock": 0.00}, {name: 1, price: 1}); // qutations withbbath kamak na nathath kamak na
+
+

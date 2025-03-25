@@ -74,4 +74,6 @@ db.getCollection('items').insertMany(item_list);
 use('supermarket');
 db.getCollection('items').find();
 
-// 3
+// 3. select item name and price of items with their stocks reached to 0
+use('supermarket');
+db.getCollection('items').find()

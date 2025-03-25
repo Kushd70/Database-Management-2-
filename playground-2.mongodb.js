@@ -126,7 +126,7 @@ use('supermarket');
 db.getCollection('items').aggregate([
     {
         $group:{
-            _id:"category",
+            _id:"$category",
             maxStockCategory: {$max : "$stock"}
         }
     }

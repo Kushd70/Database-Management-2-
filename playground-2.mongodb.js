@@ -88,5 +88,9 @@ db.getCollection('items').find({$and : [{price :{$gt : 1000}, stock : {$gt : 0}}
 use('supermarket');
 db.getCollection('items').find({"suppliers.sup_name" : "Abc Company"}); // since supplier is a main attribute we need to add " " there 
 
-// 6.
+// 6. Select items with their category set to electronics or stock reached to 5
+use('supermarket');
+db.getCollection('items').find({$or: [{"category" : "Electronics"}, {"stock" : 5}]});
+
+
 

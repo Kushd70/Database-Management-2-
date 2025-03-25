@@ -33,7 +33,10 @@ db.createCollection('items',
         validator:{
             $JsonSchema:{
                 bsonType:"object",
-                required
+                required : ["name", "price" , "stock"],
+                properties: {
+                    
+                }
             }
         }
     }

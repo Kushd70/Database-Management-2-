@@ -31,14 +31,30 @@ use('supermarket');
 db.createCollection('items',
     {
         validator:{
-            $JsonSchema:{
+            $jsonSchema:{
                 bsonType:"object",
                 required : ["name", "price" , "stock"],
                 properties: {
-                    
+                    name :{
+                        bsonType: "string",
+                        description: "Name is required"
+                    },
+                    price: {
+                        bsonType: "number",
+                        description: "price is required",
+                        minimum: 0.00
+                    },
+                    stock:{
+                        bsonType:"number",
+                        description: "stock is required",
+                        minimum: 0.00,
+                        maximum: 1000
+                    }
                 }
             }
         }
     }
 ); 
+
+
 

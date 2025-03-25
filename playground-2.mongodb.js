@@ -71,3 +71,7 @@ use('supermarket');
 db.getCollection('items').insertMany(item_list);
 
 // 2. Select all the documents in the collections
+use('supermarket');
+db.getCollection('items').find();
+
+// 3

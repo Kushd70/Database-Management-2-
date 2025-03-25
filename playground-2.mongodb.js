@@ -81,4 +81,6 @@ db.getCollection('items').find({"stock": 0.00}, {name: 1, price: 1}); // qutatio
 
 // 4. select items with their prices over 1000 and stock over 100
 use('supermarket');
-db.getCollection('items').find({price :{$gt : 1000}, stock : {$gt : 0}});
+db.getCollection('items').find({$and : [{price :{$gt : 1000}, stock : {$gt : 0}}]});
+
+

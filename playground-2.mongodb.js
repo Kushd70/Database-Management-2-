@@ -116,7 +116,7 @@ db.getCollection('items').aggregate([
     {
         $group:{
             _id:null,
-            maximumStock: {$max : "$stock"}
+            maximumStock: {$max : "$stock"} 
         }
     }
 ]);

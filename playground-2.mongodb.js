@@ -21,6 +21,7 @@
 Select maximum stock from the collection
 
 */
+use("Ecommerce");
 
 
 // create a database 
